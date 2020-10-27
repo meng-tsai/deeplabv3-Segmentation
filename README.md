@@ -1,2 +1,84 @@
-# deeplabv3-Segmentation
-Train deeplabv3-ResNet101 using CityScapes, Rascal VOC2012 detaset. Train a model using NYU depth dataset to segment floor, wall, and ceiling only.
+
+# Pytorch deeplabv3-ResNet-101
+
+ - Pretrained deeplabv3-ResNet-101 image segmentation model using Group Normalization + Weight Standardization
+ - Support TPU and GPU using Google Colab
+ - Support the following dataset:
+	 - CityScapes
+	 - Pascal VOC2012
+	 - NYU Depth Dataset V2 (wall, floor, and ceiling only)
+
+## Installation
+
+Clone the repository and save to Google Colab/Google Drive
+
+```bash
+git clone https://github.com/ashura1234/deeplabv3-Segmentation
+```
+## Data Preperation
+
+### CityScapes Dataset
+```bash
+mkdir {CityScapes,CityScapes/data,CityScapes/data/Predictions}
+cd CityScapes
+```
+Register and download leftImg8bit_trainvaltest.zip and gtFine_trainvaltest.zip from:
+https://www.cityscapes-dataset.com/downloads/
+Put the downloaded zip files into CityScapes folder and run the following commands in Terminal
+```bash
+unzip leftImg8bit_trainvaltest.zip
+unzip gtFine_trainvaltest.zip
+git clone https://github.com/mcordts/cityscapesScripts.git
+mv cityscapesScripts/cityscapesscripts ./
+rm -rf cityscapesScripts
+python cityscapesscripts/preparation/createTrainIdLabelImgs.py
+cd data
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
+```
+Put the CityScapes folder into the Google Drive folder containing cloned repo
+
+### Pascal VOC2012 Dataset
+
+Download -   [Train/Validation Data (1.9 GB)](http://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar)
+Run the following commands in Terminal:
+```bash
+tar -xf VOCtrainval_11-May-2012.tar
+cd VOCdevkit/VOC2012/
+mkdir {data,data/Predictions}
+wget http://cs.jhu.edu/~cxliu/data/SegmentationClassAug.zip
+wget http://cs.jhu.edu/~cxliu/data/SegmentationClassAug_Visualization.zip
+wget http://cs.jhu.edu/~cxliu/data/list.zip
+unzip SegmentationClassAug.zip
+unzip SegmentationClassAug_Visualization.zip
+unzip list.zip
+cd data
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
+```
+Put the VOC2012 folder into the Google Drive folder containing cloned repo
+
+
+### NYU Depth Dataset V2
+
+Download [Labeled Dataset](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html)
+Run the following commands in Terminal:
+```bash
+mkdir IndoorNYU
+cd IndoorNYU
+mkdir {images,images/train,images/train/1,images/val,images/val/1,depths,labels,target,target/train,target/train/1,target/val,target/val/1,data,data/Predictions}
+wget http://horatio.cs.nyu.edu/mit/silberman/nyu_depth_v2/nyu_depth_v2_labeled.mat
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/get_instance_masks.m?raw=true
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/output.m?raw=true
+cd data
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
+```
+Put the IndoorNYU folder into the Google Drive folder containing cloned repo
+
+## License
+Credit to # [chenxi116](https://github.com/chenxi116)
+
+BSD 3-Clause License
+Copyright (c) 2018, Chenxi Liu
+All rights reserved.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNDU1NTI4MTVdfQ==
+-->
