@@ -84,6 +84,7 @@ Result of applying the trained model to validation dataset:
 
 ## Applied on Collected Images
 Use model trained by NYU depth dataset v2.
+50 epochs, lr = 0.007
 
 |Original image | Prediction|
 |---|---|
@@ -96,5 +97,5 @@ BSD 3-Clause License\
 Copyright (c) 2018, Chenxi Liu\
 All rights reserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODA1NDgzOTNdfQ==
+eyJoaXN0b3J5IjpbODA5Nzk3MzM2XX0=
 -->
