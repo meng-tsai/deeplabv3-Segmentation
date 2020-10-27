@@ -6,8 +6,8 @@ for i = 1:length(images)
     else
         imageFileName = strcat('images/val/1/', 'image', sprintf('%04d',i), '.png');
     end
-    depthFileName = strcat('depths/1/', 'image', sprintf('%04d',i), '.csv');
-    labelFileName = strcat('labels/1/', 'label', sprintf('%04d',i), '.png');
+    depthFileName = strcat('depths/', 'image', sprintf('%04d',i), '.csv');
+    labelFileName = strcat('labels/', 'label', sprintf('%04d',i), '.png');
     rgbdImage = images(:,:,:,i);
     depth = depths(:,:,i);
     label = labels(:,:,i);
