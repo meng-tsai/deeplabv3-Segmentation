@@ -16,10 +16,6 @@ for i = 1:length(images)
     imwrite(label, labelFileName, 'png')
 end
 
-% Output label names
-T = cell2table([val, k]);
-writetable(T,'labelNames.csv');
-
 % Output target mask
 
 maxCeiling = 2;
