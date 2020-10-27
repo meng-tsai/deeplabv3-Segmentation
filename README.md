@@ -33,7 +33,7 @@ mv cityscapesScripts/cityscapesscripts ./
 rm -rf cityscapesScripts
 python cityscapesscripts/preparation/createTrainIdLabelImgs.py
 cd data
-wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat
 ```
 Put the CityScapes folder into the Google Drive folder containing cloned repo
 
@@ -52,7 +52,7 @@ unzip SegmentationClassAug.zip
 unzip SegmentationClassAug_Visualization.zip
 unzip list.zip
 cd data
-wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat
 ```
 Put the VOC2012 folder into the Google Drive folder containing cloned repo
 
@@ -66,10 +66,10 @@ mkdir IndoorNYU
 cd IndoorNYU
 mkdir {images,images/train,images/train/1,images/val,images/val/1,depths,labels,target,target/train,target/train/1,target/val,target/val/1,data,data/Predictions}
 wget http://horatio.cs.nyu.edu/mit/silberman/nyu_depth_v2/nyu_depth_v2_labeled.mat
-wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/get_instance_masks.m?raw=true
-wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/output.m?raw=true
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/get_instance_masks.m
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/output.m
 cd data
-wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
+wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat
 ```
 Run output.m using Matlab\
 Put the IndoorNYU folder into the Google Drive folder containing cloned repo
@@ -89,5 +89,5 @@ BSD 3-Clause License\
 Copyright (c) 2018, Chenxi Liu\
 All rights reserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzE2MDEzNl19
+eyJoaXN0b3J5IjpbMTcwOTkyMjkwMF19
 -->
