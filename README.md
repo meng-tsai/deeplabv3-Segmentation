@@ -79,8 +79,7 @@ Trained 50 ephochs with 0.007 learning rate\
 Result of applying the trained model to validation dataset:
 |  | CityScapes | Pascal VOC 2012| NYUdepth v2 |
 |--|--|--|--|
-| mIoU | <center>68.02%</center> | <center>76.63%</center> | Wall 73.85%<br>Floor 62.42% |
-\
+| mIoU | <center>68.02%</center> | <center>76.63%</center> | Wall 73.85%<br>Floor 62.42% |<br>
 Predcted segmentation images are in data/Predictions folder
 
 ## License
@@ -90,5 +89,5 @@ BSD 3-Clause License\
 Copyright (c) 2018, Chenxi Liu\
 All rights reserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MzQ2NDI5NF19
+eyJoaXN0b3J5IjpbLTk4NjE2NDEwMl19
 -->
