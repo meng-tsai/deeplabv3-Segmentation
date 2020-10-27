@@ -64,7 +64,7 @@ Run the following commands in Terminal:
 ```bash
 mkdir IndoorNYU
 cd IndoorNYU
-mkdir {images,images/train,images/train/1,images/val,images/val/1,depths,labels,target,target/train,target/train/1,target/val,target/val/1,data,data/Predictions}
+mkdir {images,images/train,images/train/1,images/val,images/val/1,depths,labels,target,target/train,target/train/1,target/val,target/val/1,data,data/Predictions,data/Preditions/test}
 wget http://horatio.cs.nyu.edu/mit/silberman/nyu_depth_v2/nyu_depth_v2_labeled.mat
 wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/get_instance_masks.m
 wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/output.m
@@ -74,13 +74,20 @@ wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_c
 Run output.m using Matlab\
 Put the IndoorNYU folder into the Google Drive folder containing cloned repo
 
-## Result
+## Segmentation Performance
 Trained 50 ephochs with 0.007 learning rate\
 Predcted segmentation images are in data/Predictions folder\
 Result of applying the trained model to validation dataset:
-|      | CityScapes | Pascal VOC 2012| NYUdepth v2 |
+|      | CityScapes | Pascal VOC 2012| NYU depth v2 |
 |---   |---         |---             |---          |
 | mIoU | <center>68.02%</center> | <center>76.63%</center> | Wall 73.85%<br>Floor 62.42% |
+
+## Applied on Collected Images
+Use model trained by NYU depth dataset v2.
+
+|Original image | Prediction|
+|---|---|
+|<img  src="https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/img/original.png?raw=true"  width=240>|<img  src="https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/img/prediction.png?raw=true"  width=240>|
 
 ## License
 Credit to # [chenxi116](https://github.com/chenxi116)
@@ -89,5 +96,5 @@ BSD 3-Clause License\
 Copyright (c) 2018, Chenxi Liu\
 All rights reserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTkyMjkwMF19
+eyJoaXN0b3J5IjpbLTE2ODA1NDgzOTNdfQ==
 -->
