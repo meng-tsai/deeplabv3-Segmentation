@@ -76,11 +76,11 @@ Put the IndoorNYU folder into the Google Drive folder containing cloned repo
 
 ## Result
 Trained 50 ephochs with 0.007 learning rate\
+Predcted segmentation images are in data/Predictions folder\
 Result of applying the trained model to validation dataset:
 |      | CityScapes | Pascal VOC 2012| NYUdepth v2 |
 |---   |---         |---             |---          |
-| mIoU | <center>68.02%</center> | <center>76.63%</center> | Wall 73.85%<br>Floor 62.42% |<br>
-Predcted segmentation images are in data/Predictions folder
+| mIoU | <center>68.02%</center> | <center>76.63%</center> | Wall 73.85%<br>Floor 62.42% |
 
 ## License
 Credit to # [chenxi116](https://github.com/chenxi116)
@@ -89,5 +89,5 @@ BSD 3-Clause License\
 Copyright (c) 2018, Chenxi Liu\
 All rights reserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTk1MDIwMF19
+eyJoaXN0b3J5IjpbMTE0MzE2MDEzNl19
 -->
