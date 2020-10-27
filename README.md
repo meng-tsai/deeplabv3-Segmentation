@@ -24,7 +24,7 @@ cd CityScapes
 ```
 Register and download leftImg8bit_trainvaltest.zip and gtFine_trainvaltest.zip from:
 https://www.cityscapes-dataset.com/downloads/
-Put the downloaded zip files into CityScapes folder and run the following commands in Terminal
+\nPut the downloaded zip files into CityScapes folder and run the following commands in Terminal
 ```bash
 unzip leftImg8bit_trainvaltest.zip
 unzip gtFine_trainvaltest.zip
