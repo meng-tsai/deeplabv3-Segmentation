@@ -71,6 +71,7 @@ wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/output.m?raw
 cd data
 wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
 ```
+Run output.m using Matlab
 Put the IndoorNYU folder into the Google Drive folder containing cloned repo
 
 ## License
@@ -80,5 +81,5 @@ BSD 3-Clause License
 Copyright (c) 2018, Chenxi Liu
 All rights reserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDU1NTI4MTVdfQ==
+eyJoaXN0b3J5IjpbLTE3NjY3ODExM119
 -->
