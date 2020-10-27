@@ -1,5 +1,4 @@
 load('nyu_depth_v2_labeled.mat')
-get_instance_masks
 % Output RGBD
 for i = 1:length(images)
     if i <= 1200
