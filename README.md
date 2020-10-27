@@ -22,7 +22,7 @@ git clone https://github.com/ashura1234/deeplabv3-Segmentation
 mkdir {CityScapes,CityScapes/data,CityScapes/data/Predictions}
 cd CityScapes
 ```
-Register and download leftImg8bit_trainvaltest.zip and gtFine_trainvaltest.zip from:\
+Register and download leftImg8bit_trainvaltest.zip and gtFine_trainvaltest.zip from:
 https://www.cityscapes-dataset.com/downloads/ \
 Put the downloaded zip files into CityScapes folder and run the following commands in Terminal
 ```bash
@@ -74,12 +74,20 @@ wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_c
 Run output.m using Matlab\
 Put the IndoorNYU folder into the Google Drive folder containing cloned repo
 
+## Result
+Trained 50 ephochs with 0.007 learning rate\
+Result of applying the trained model to validation dataset:
+|  | CityScapes | Pascal VOC 2012| NYUdepth v2 |
+|--|--|--|--|
+| mIoU | <center>68.02%</center> | <center>76.63%</center> | Wall 73.85%<br>Floor 62.42% |
+Predcted segmentation images are in data/Predictions folder
+
 ## License
 Credit to # [chenxi116](https://github.com/chenxi116)
 
-BSD 3-Clause License
-Copyright (c) 2018, Chenxi Liu
+BSD 3-Clause License\
+Copyright (c) 2018, Chenxi Liu\
 All rights reserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjY3ODExM119
+eyJoaXN0b3J5IjpbMTAxMjQ2NjI4NF19
 -->
