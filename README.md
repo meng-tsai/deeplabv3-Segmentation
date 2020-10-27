@@ -22,9 +22,9 @@ git clone https://github.com/ashura1234/deeplabv3-Segmentation
 mkdir {CityScapes,CityScapes/data,CityScapes/data/Predictions}
 cd CityScapes
 ```
-Register and download leftImg8bit_trainvaltest.zip and gtFine_trainvaltest.zip from:
-https://www.cityscapes-dataset.com/downloads/
-\nPut the downloaded zip files into CityScapes folder and run the following commands in Terminal
+Register and download leftImg8bit_trainvaltest.zip and gtFine_trainvaltest.zip from:\
+https://www.cityscapes-dataset.com/downloads/ \
+Put the downloaded zip files into CityScapes folder and run the following commands in Terminal
 ```bash
 unzip leftImg8bit_trainvaltest.zip
 unzip gtFine_trainvaltest.zip
@@ -71,7 +71,7 @@ wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/output.m?raw
 cd data
 wget https://github.com/ashura1234/deeplabv3-Segmentation/blob/main/pascal_seg_colormap.mat?raw=true
 ```
-Run output.m using Matlab
+Run output.m using Matlab\
 Put the IndoorNYU folder into the Google Drive folder containing cloned repo
 
 ## License
